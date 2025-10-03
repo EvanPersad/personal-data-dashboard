@@ -19,6 +19,6 @@ if uploaded_file:
         st.line_chart(df[numeric_cols[0]])
 
     if len(numeric_cols) > 1:
-    st.write("Scatter Plot:")
-    fig = px.scatter(df, x=numeric_cols[0], y=numeric_cols[1])
-    st.plotly_chart(fig)
+        st.write("Scatter Plot:")
+        fig = px.scatter(df, x=numeric_cols[0], y=numeric_cols[1])
+        st.plotly_chart(fig)
